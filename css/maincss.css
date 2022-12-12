@@ -126,7 +126,9 @@ li a.navbutton {
     transition: background-color 0.5s;
     
 }
-
+.productTable {
+    border-spacing: 50px;
+}
 .section1 {
     position: relative;
     text-align: center;
@@ -263,7 +265,7 @@ a.footerlink:visited{
     margin: 30px 0px 30px 0px; 
 }
 .footer th, td {
-    padding: 15px 20px 15px 20px;
+    padding: 10px 30px 30px 10px;
     height: 40px;
 }
 .video-container {
@@ -386,10 +388,18 @@ button.callToActionButton:hover {
     margin-top:50px;
     margin-bottom:50px;
 }
+.aboutsection .sectionimg{
+    margin: 50px 0 50px 0;
+}
+.howtosection .sectionimg{
+    margin: 50px 0 50px 0
+}
 .howtosection{
     background-color:#f3f3f3;
     border: black none 4px;
     border-radius:5px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -409,35 +419,60 @@ button.callToActionButton:hover {
         padding: 15px;
     }
     .textmainheader {
-        font-size:20px;
+        font-size:18px;
     }
     .categorybutton {
         padding: 15px 15px 10px 15px;
     }
     .productitem {
-        padding: 15px 15px 10px 15px;
+        padding: 15px 10px 10px 10px;
         margin: 0% 16.67% 0% 16.67%;
     }
     .productbuttonimg {
         width: 75px;
         padding: 3px;
     }
+    .productTable {
+        border-spacing: 2px;
+    }
     .sectionbox {
         padding: 0px 0px 0px 0px;
     }
     .sectionimg {
         width: 150px;
+        display: inline-block;
     }
     .sectiontext {
-        font-size: 16px
+        font-size: 12px;
+        width: 75%;
+        float:center;
+        display: inline-block;
     }
+    .aboutsection .sectionimg {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .howtosection .sectionimg {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    #sectionimg {
+        display:hidden;
+    }
+    .aboutsection{
+        margin: 0;
+    }
+
     .sectionheader{
-        font-size:24px;
+        font-size:16px;
     }
     button.callToActionButton {
         font-size:14px;
         margin-left: 75px;
         margin-right:75px; 
+        margin-bottom: 50px;
         padding: 14px 14px;
     }
     .contacttable .footerheader{
@@ -471,5 +506,27 @@ button.callToActionButton:hover {
     }
     
 }
+@media screen and (max-width: 400px) {
+    .contacttable .footerheader{
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .quicklinks .footerheader{
+        font-size: 12px;
+    }
+    .footerlink {
+        font-size: 12px;
+        margin: 1px 0px 1px 0px; 
+    }
+    .footer th, td {
+        padding: 10px 10px 10px 10px;
+        height: 40px;
+    }
+    .textmainheader {
+        font-size:17px;
+    }
+}
+
 
 
