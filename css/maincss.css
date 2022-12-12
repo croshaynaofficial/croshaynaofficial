@@ -435,6 +435,9 @@ button.callToActionButton:hover {
     .productTable {
         border-spacing: 2px;
     }
+    .tutHeader {
+        font-size:24px
+    }
     .sectionbox {
         padding: 0px 0px 0px 0px;
     }
