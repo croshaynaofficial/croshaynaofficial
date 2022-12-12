@@ -459,7 +459,7 @@ button.callToActionButton:hover {
         padding: 3px;
     }
     .productTable {
-        border-spacing: 2px;
+        border-spacing: 0px;
     }
     .tutHeader {
         font-size:24px
