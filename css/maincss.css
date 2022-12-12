@@ -295,14 +295,39 @@ button.callToActionButton {
     margin-left: 100px;
     margin-right:100px; 
     font-weight: bold;
-
+    transition: 0.5s;
 }
+button.callToActionButton{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+button.callToActionButton:after{
+    content: '>>';
+    position: absolute;
+    opacity: 0;  
+    top: 30px;
+    right: -100px;
+    transition: 0.5s;
+}
+button.callToActionButton:hover{
+    padding-right: 50px;
+    padding-left:50px;
+  }
+  
+  button.callToActionButton:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
 .sectionbox {
     padding: 0px 150px 0px 150px;
 }
 button.callToActionButton:hover {
     background-color:#6e8573;
     transition: background-color 0.5s;
+    cursor: pointer;
 
 }
 
@@ -334,6 +359,7 @@ button.callToActionButton:hover {
 .categorybutton:hover{
     background-color: #ddd;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 .footerheader{
     font-size: 24px;
