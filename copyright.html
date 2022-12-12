@@ -1,0 +1,173 @@
+<!--google email: croshaynaofficial@gmail.com
+password: franks birthyear and then his Lastname
+fbirthyearFlastname-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cro-Shayna</title>
+<link rel="stylesheet" href="css/maincss.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.visibility === "visible") {
+            x.style.display = "none"
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.transition = "block 0.5s visibility 0s, opacity 1s linear"
+        } else {
+            x.style.display = "block"
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+        }
+        
+    }
+    function hoverImage(imageID, imageLocation) {
+        document.getElementById(imageID).src = imageLocation;
+        document.getElementById(imageID).style.webkitTransition = " all .3s ease-in-out";
+        document.getElementById(imageID).style.transition = " all .3s ease-in-out";
+    }
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {navMoveWithScroll};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function navMoveWithScroll() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    function formFunction() {
+        var input = document.getElementById("formSubButton");
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        input.value = "SUBMITTED";
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+</script>
+</head>
+<style>
+@media screen and (max-width: 1200px) {
+        .navbar {
+        display: none;
+        }
+
+        .header {
+        display: none;
+        }
+
+        .mobilenav {
+        display: block;
+        }
+        .section1 .textcentered p {
+        font-size: 32px;
+        }
+        .section2text{
+        font-size: 20px;
+        }
+    }
+</style>
+<body>
+
+    <header>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li style="float: left;"><a href="index.html" id="navlogo" ><img src="images/logo.png" style="height: 65px;" /></a></li>
+                <li style="float: right;"><a href="contact.html" id="navbutton"><strong>HELP</strong></a></li>
+                <li style="float: right;"><a href="tutorials.html" class="active" id="navbutton"><strong>TUTORIALS</strong></a></li>
+                <li style="float: right;"><a href="about.html" id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;"><a href="products.html" id="navbutton" ><strong>PRODUCTS</strong></a></li>
+                <li style="float: right;"><a href="index.html" id="navbutton" ><strong>HOME</strong></a></li>
+                
+            </ul>
+        
+        </div>
+        <div class="mobilenav">
+            <a href="index.html"><img id="mobileimage" src="images/logo.png" style="height:50px; " /></a>
+            
+                
+            <div id="myLinks">
+                <a href="index.html"  style="color: black; "><strong>HOME</strong></a>
+                <a href="products.html" style="color: black;"><strong>PRODUCTS</strong></a>
+                <a href="tutorials.html" class="active"style="color: white;"><strong>TUTORIALS</strong></a>
+                <a href="about.html" style="color: black;"><strong>ABOUT</strong></a>
+                <a href="contact.html" style="color: black;"><strong>CONTACT</strong></a>
+            </div>
+            <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+                <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
+            </a>
+    
+        </div>
+    </header>
+
+    <div class="contactinfo" style="margin-top: 75px; margin-bottom: 75px;">
+        <h1>COPYRIGHT</h1>
+        <p>
+            Yarn in logo/fav and category button icons all used from flaticon.com <br>
+            Font used is from fonts.google.com <br>
+            Logo created using Figma, logo created by group <br>
+            Main photo in section 1 ("Crochet, you say?" section) taken from pix
+        </p>
+    </div>
+
+
+
+    <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
+        <div class ="footer" style="text-align:left; float:left; width: 50%;">
+            <table class="quicklinks" align="center">
+                <tr>
+                    <th colspan="2" class="footerheader" style="text-align: center;padding-top: 25px;">QUICK LINKS</th>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="index.html" style="float: center"><strong>HOME</strong></a></td>
+                    <td><a class="footerlink" href="about.html" style="float:center;"><strong>ABOUT</strong></a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="products.html" style="float: center;"><strong>PRODUCTS</strong></a></td>
+                    <td><a class="footerlink" href="contact.html" style="float: center"><strong>HELP</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="tutorials.html" style="float: center"><strong>TUTORIALS</strong></a></td>
+                    <td><a class="footerlink" href="copyright.html" style="float: center;"><strong>COPYRIGHT</strong></a></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="emailform" style="text-align:right; width:50%; float: right;">
+            <table class="contacttable" align="center">
+                <tr>
+                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sign up below!</td>
+                </tr>
+                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
+                    <tr colspan="2"class="labelitem">
+                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="formitem" colspan="2">
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+
+    </div>
+    
+    
+</div>
+
+
+</body>
+</html>

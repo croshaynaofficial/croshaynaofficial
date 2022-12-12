@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cro-Shayna</title>
+<link rel="stylesheet" href="css/maincss.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.visibility === "visible") {
+            x.style.display = "none"
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.transition = "block 0.5s visibility 0s, opacity 1s linear"
+        } else {
+            x.style.display = "block"
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+            x.style.transition = "block 0.5s visibility 0s, opacity 0.5s linear"
+        }
+        
+    }
+    function formFunction() {
+        var input = document.getElementById("formSubButton");
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        input.value = "SUBMITTED";
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+
+</script>
+</head>
+<style>
+    @media screen and (max-width: 1200px) {
+        .navbar {
+        display: none;
+        }
+
+        .header {
+        display: none;
+        }
+
+        .mobilenav {
+        display: block;
+        }
+        .section1 .textcentered p {
+        font-size: 32px;
+        }
+        .section2text{
+        font-size: 24px;
+        }
+    }
+    li{
+        float:none;
+        background-color: white;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="float: left;background-color: #f3f3f3;"><a href="index.html" id="navlogo" ><img src="images/logo.png" style="height: 65px;" /></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="contact.html" id="navbutton"><strong>HELP</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;""><a href="tutorials.html" id="navbutton"><strong>TUTORIALS</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="about.html"  id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="products.html"  class="active" id="navbutton" ><strong>PRODUCTS</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="index.html"  id="navbutton" ><strong>HOME</strong></a></li>
+            </ul>
+        
+        </div>
+        <div class="mobilenav">
+            <a href="index.html"><img id="mobileimage" src="images/logo.png" style="height:50px; " /></a>
+            
+                
+            <div id="myLinks">
+                <a href="index.html" style="color: black; "><strong>HOME</strong></a>
+                <a href="products.html" class="active" style="color: white;"><strong>PRODUCTS</strong></a>
+                <a href="tutorials.html" style="color: black;"><strong>TUTORIALS</strong></a>
+                <a href="about.html" style="color: black;"><strong>ABOUT</strong></a>
+                <a href="contact.html" style="color: black;"><strong>CONTACT</strong></a>
+            </div>
+            <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+                <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
+            </a>
+    
+        </div>
+    </header>
+        
+    <div>
+        <table cellspacing="30" style="max-width:50%; margin-left: auto; margin-right:auto;">
+         <tr ><th colspan="3"><strong style="font-size: 40px; margin: 25px 0px 25px 0px;">PRODUCTS</strong></th></tr>
+         <tr><td colspan="3" id="toys"><h2 style="text-align: center;">TOYS</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochetbunny.jpeg"><br><strong>BUNNY</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/2octopusside.jpeg"><br><strong>OCTOPUS</strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/sidebee.jpeg"><br><strong>BEE</strong></td>
+         </tr>
+         <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/image3.jpeg"><br><strong>PINK BEAR</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/image4.jpeg"><br><strong>PINK BERRY</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/purpledonut.jpeg"><br><strong>DOUGHNUT</strong></td>
+        </tr>
+        <tr></tr>
+        <tr><td colspan="3" id="clothing"><h2 style="text-align: center;">CLOTHING</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochethatwhite.jpeg"><br><strong>SIMPLE KNIT BEANIE</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochet hat flower.jpeg"><br><strong>FLOWER BEANIE</strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/crochet hat purple.jpeg"><br><strong>PURPLE BEANIE</strong></td>
+         </tr>
+         <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet gloves red.jpeg"><br><strong>RED GLOVES</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet gloves burgandy.jpeg"><br><strong>PINK GLOVES</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/crochet shirt white.jpeg"><br><strong>WHITE CROP TOP</strong></td>
+        </tr>
+        <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet scrunchee black.jpeg"><br><strong>DARK GRAY SCRUCHIE</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet scrunchee white.jpeg"><br><strong>GRAY SCRUNCHIE</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/crochet shirt zebra.jpeg"><br><strong>ZEBRA-STRIPED KNIT VEST</strong></td>
+        </tr>
+        <tr></tr>
+        <tr><td colspan="3" id="patterns"><h2 style="text-align: center;">PATTERNS</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochetflowerkeychain.jpeg"><br><strong>FLOWER KEYCHAIN PATTERN</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/purplehat.jpeg"><br><strong>SIMPLE KNIT HAT PATTERN</strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/crochethackysack.jpeg"><br><strong>HACKY SACK PATTERN</strong></td>
+         </tr>
+         <tr><td colspan="3"><p style="text-align: center;font-style:italic;">MORE ITEMS COMING SOON!</p></td></tr>
+     </table>
+     </div>
+
+     <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
+        <div class ="footer" style="text-align:left; float:left; width: 50%;">
+            <table class="quicklinks" align="center">
+                <tr>
+                    <th colspan="2" class="footerheader" style="text-align: center;padding-top: 25px;">QUICK LINKS</th>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="index.html" style="float: center"><strong>HOME</strong></a></td>
+                    <td><a class="footerlink" href="about.html" style="float:center;"><strong>ABOUT</strong></a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="products.html" style="float: center;"><strong>PRODUCTS</strong></a></td>
+                    <td><a class="footerlink" href="contact.html" style="float: center"><strong>HELP</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="tutorials.html" style="float: center"><strong>TUTORIALS</strong></a></td>
+                    <td><a class="footerlink" href="copyright.html" style="float: center;"><strong>COPYRIGHT</strong></a></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="emailform" style="text-align:right; width:50%; float: right;">
+            <table class="contacttable" align="center">
+                <tr>
+                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sign up below!</td>
+                </tr>
+                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
+                    <tr colspan="2"class="labelitem">
+                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="formitem" colspan="2">
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
