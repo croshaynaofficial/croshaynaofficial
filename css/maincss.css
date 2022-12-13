@@ -295,32 +295,7 @@ button.callToActionButton {
     margin-left: 100px;
     margin-right:100px; 
     font-weight: bold;
-    transition: 0.5s;
 }
-button.callToActionButton{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-button.callToActionButton:after{
-    content: '>>';
-    position: absolute;
-    opacity: 0;  
-    top: 30px;
-    right: -100px;
-    transition: 0.5s;
-}
-button.callToActionButton:hover{
-    padding-right: 50px;
-    padding-left:50px;
-  }
-  
-  button.callToActionButton:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
-
 .sectionbox {
     padding: 0px 150px 0px 150px;
 }
@@ -459,7 +434,7 @@ button.callToActionButton:hover {
         padding: 3px;
     }
     .productTable {
-        border-spacing: 0px;
+        border-spacing: 2px;
     }
     .tutHeader {
         font-size:24px
