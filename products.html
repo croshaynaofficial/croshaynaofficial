@@ -91,14 +91,14 @@
         </div>
     </header>
         
-    <div>
-        <table cellspacing="5" class="productTable"style="max-width:50%; margin-left: auto; margin-right:auto;">
+    <div class="content">
+        <table cellspacing="5" class="productTable"style="max-width:75%; margin-left: auto; margin-right:auto;">
          <tr ><th colspan="3"><strong style="font-size: 40px; margin: 25px 0px 0px 0px;">PRODUCTS</strong></th></tr>
          <tr><td colspan="3" id="toys"><h2 style="text-align: center; margin:0;">TOYS</h2></td></tr>
          <tr>
-             <td class="productitem"><img class="productbuttonimg" src="images/crochetbunny.jpeg"><br><strong>BUNNY<br>$20.00</strong></td>
-             <td class="productitem"><img class="productbuttonimg" src="images/2octopusside.jpeg"><br><strong>OCTOPUS<br>$8.00 EACH</strong></td>
-             <td class="productitem"><img class="productbuttonimg"  src="images/sidebee.jpeg"><br><strong>BEE<br>$30.00</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochetbunny.jpeg"><br><strong><p class="productHeader"><a href="oneproducttemplate.html"  >BUNNY</a></p><p class="productPrice">$20.00</p><button class="addtocart">ADD TO CART</button></strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/2octopusside.jpeg"><br><strong><p class="productHeader">OCTOPUS</p><p class="productPrice">$8.00 EACH</p><p class="addtocart">ADD TO CART</p></strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/sidebee.jpeg"><br><strong><p class="productHeader">BEE</p><p class="productPrice">$30.00</p><p class="addtocart">ADD TO CART</p></strong></td>
          </tr>
          <tr>
             <td class="productitem"><img class="productbuttonimg" src="images/image3.jpeg"><br><strong>STRAWBERRY OTTER<br>$35.00</strong></td>
@@ -132,6 +132,20 @@
          <tr><td colspan="3"><p style="text-align: center;font-style:italic;">MORE ITEMS COMING SOON!</p></td></tr>
      </table>
      </div>
+
+     <div style="background-image: url('images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
+        <div>
+            <table class= "signup" style="margin-top: 20px;margin-bottom: 20px;">
+                <form>
+                <tr> <th><h1>Become a Member for Weekly Deals!</h1></th></tr>
+                <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="name" name="name" placeholder="Name"/></p></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="email" name="email" placeholder="Email"/></p></td></tr>
+                <tr style="padding-bottom: 100px;"><td><p><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></p></td></tr>
+                </form>
+            </table>
+        </div>
+    </div>
 
      <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
         <div class ="footer" style="text-align:left; float:left; width: 50%;">

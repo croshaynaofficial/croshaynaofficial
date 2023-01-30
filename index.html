@@ -31,16 +31,6 @@ fbirthyearFlastname-->
         document.getElementById(imageID).style.transition = " all .3s ease-in-out";
     }
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {navMoveWithScroll};
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    function navMoveWithScroll() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
     function formFunction() {
         var input = document.getElementById("formSubButton");
         var nameInput = document.getElementById("name");
@@ -48,6 +38,16 @@ fbirthyearFlastname-->
         input.value = "SUBMITTED";
         nameInput.value = "";
         emailInput.value = "";
+    }
+    var i = 0;
+    var txt = "Crochet, you say?";
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typeText").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
     }
     
 </script>
@@ -66,21 +66,22 @@ fbirthyearFlastname-->
         display: block;
         }
         .section1 .textcentered p {
-        font-size: 22px;
+        font-size: 24px;
         }
         .section2text{
         font-size: 20px;
         }
-    }
+        .
+    } 
 </style>
-<body>
+<body onload="typeWriter()">
 
     <header>
         <div class="navbar" id="navbar">
             <ul>
                 <li style="float: left;"><a href="index.html" id="navlogo" ><img src="images/logo.png" style="height: 65px;" /></a></li>
                 <li style="float: right;"><a href="contact.html" id="navbutton"><strong>HELP</strong></a></li>
-                <li style="float: right;"><a href="about.html"  id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;"><a href="about.html" id="navbutton" ><strong>ABOUT</strong></a></li>
                 <li style="float: right;"><a href="tutorials.html" id="navbutton"><strong>TUTORIALS</strong></a></li>
                 <li style="float: right;"><a href="products.html" id="navbutton" ><strong>PRODUCTS</strong></a></li>
                 <li style="float: right;"><a href="index.html" class="active" id="navbutton" ><strong>HOME</strong></a></li>
@@ -98,7 +99,7 @@ fbirthyearFlastname-->
                 <a href="products.html" style="color: black;"><strong>PRODUCTS</strong></a>
                 <a href="tutorials.html" style="color: black;"><strong>TUTORIALS</strong></a>
                 <a href="about.html" style="color: black;"><strong>ABOUT</strong></a>
-                <a href="contact.html" style="color: black;"><strong>HELP</strong></a>
+                <a href="contact.html" style="color: black;"><strong>CONTACT</strong></a>
             </div>
             <a href="javascript:void(0);" class="icon"onclick="myFunction()">
                 <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
@@ -109,9 +110,9 @@ fbirthyearFlastname-->
 
     <div class = "content">
         <div class = "section1">
-            <img src="images/indexfrontimage.png" alt="Shirts" style="width:100%; border: none; border-radius: 5px;">
-            <div class="textcentered">
-                <p class="textmainheader">Crochet, you say?</p>
+            <img class = "section1img" src="images/indexfrontimage.png" alt="Shirts" style="width:100%; border: none;">
+            <div class="textcentered" >
+                <p class="textmainheader" id="typeText"></p>
             </div>
         </div>
 
@@ -120,13 +121,18 @@ fbirthyearFlastname-->
                 <!--This is going to be some categories of products that will take you to a specific page with only those products-->
                 <div class="indextable">
                    <table cellspacing="10" style="max-width:50%; margin-left: auto; margin-right:auto;">
-                    <tr ><th colspan="3"><strong style="font-size: 40px; margin: 25px 0px 25px 0px;">SHOP</strong></th></tr>
+                    <tr style = "text-align: center;" ><th colspan="3" ><strong style="font-size: 40px;">SHOP</strong></th></tr>
                     <tr>
                         <td onclick="location.href='products.html#toys'" class="categorybutton"><img class="categorybuttonimg" src="images/teddy-bear.png"><br><strong>TOYS</strong></td>
                         <td onclick="location.href='products.html#clothing'" class="categorybutton"><img class="categorybuttonimg" src="images/fashion.png"><br><strong>CLOTHING</strong></td>
                         <td onclick="location.href='products.html#patterns'" class="categorybutton"><img class="categorybuttonimg"  src="images/crochet.png"><br><strong>PATTERNS</strong></td>
                         
                     </tr>
+                    <tr>
+                        <td float="center"></td>
+                        <td><button style="margin: 0 25% 0 25%; padding-left:8%;padding-right: 8%;" id="shopallbutton" onclick="document.location='products.html'" style="display:inline-block">SHOP ALL</button></td>
+                        <td></td>
+                        </tr>
                 </table>
                 </div>
         </div>
@@ -134,31 +140,45 @@ fbirthyearFlastname-->
         <div class="aboutsection">
             <table cellspacing="0" style="margin-left: auto; margin-right:auto;">
                 <tr>
-                    <td class="sectionbox" ><img class="sectionimg" src="images/whoAreWe.jpg" style="border:black none 1px; border-radius: 5px; " /></td>
-                    <td class="sectionbox"style="text-align:center;">
-                        <h1 class="sectionheader"style="max-width: 500px">WHO ARE WE?</h1>
-                        <p class="sectiontext" style="max-width: 500px"> Cro-Shayna is a small fiber arts business. We provide many products and services, including selling of crocheted items including toys, hats, shirts, pants, keychains, and more. We also sell patterns for people to buy to create their own crocheted products. We provide FREE tutorials to allow our customers to learn the art of crocheting, through small, short videos allowing even the least tech savy users to learn how to crochet. Our costs for our items and services are reasonably priced, with most being low priced, and some, including our tutorials, being FREE! Our products are made from the heart, and we'd love for you to join the Cro-Shayna family.</p>
-                        <button class="callToActionButton" onclick="document.location='products.html'" style="display:inline-block;">CLICK HERE TO SHOP!</button>
+                    <td id="sectionimg"class="sectionbox" ><img class="sectionimg" id="whoAreWeImg" src="images/whoAreWe.jpg" style="border:black none 1px; " /></td>
+                    <td class="sectionbox" id="card"style="text-align:center;">
+
+                        <h1 class="sectionheader">WHO ARE WE?</h1>
+                        <p class="sectiontext" > Cro-Shayna is a small fiber/crotching business. We provide many products and services, including selling of crocheted items including toys, hats, shirts, pants, keychains, and more. We also sell patterns for people to buy to create their own crocheted products. We provide FREE tutorials to allow our customers to learn the art of crocheting, through small, short videos allowing even the least tech savy users to learn how to crochet. Our costs for our items and services are reasonably priced, with most being low priced, and some, including our tutorials, being FREE! Our products are made from the heart, and we'd love for you to join the Cro-Shayna family.</p>
+                        <button id="aboutButton"style="float: left;" class="callToActionButton" onclick="document.location='products.html'" style="display:inline-block;">CLICK HERE TO SHOP!</button>
                         
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="howtosection" style="margin-bottom:30px">
+        <div class="howtosection" style="">
             <table cellspacing="" style="margin-left: auto; margin-right:auto;">
                 <tr>
-                    <td class="sectionbox" style="text-align:center;">
-                        <h1 class="sectionheader" style="max-width: 500px">WE PROVIDE TUTORIALS!</h1>
-                        <p class="sectiontext" style="max-width: 500px">Crochet is a growing hobby. Many people are now learning how to do it. Our business provides pdfs of patterns of how to make certain pieces. We also provide free tutorials on how to follow these patterns and how to crochet and knit for complete begineers. We also have videos provided on our YouTube page (also found on our website) to follow along with while you create your very own art out of yarn.</p>
-                        <button class="callToActionButton" onclick="document.location='tutorials.html'" style="display:inline-block">CLICK HERE FOR TUTORIALS!</button>
+                    
+                    <td class="sectionbox" id="card"style="text-align:center;">
+                        <h1 class="sectionheader" >WE PROVIDE TUTORIALS!</h1>
+                        <p  class="sectiontext" > Crochet is a growing hobby. Many people are now learning how to do it. Our business provides pdfs of patterns of how to make certain pieces. We also provide free tutorials on how to follow these patterns and how to crochet and knit for complete begineers. We also have videos provided on our YouTube page (also found on our website) to follow along with while you create your very own art out of yarn.</p>
+                        <button style="float: left; "class="callToActionButton" onclick="document.location='tutorials.html'" style="display:inline-block">CLICK HERE FOR TUTORIALS!</button>
                     </td>
-                    <td class="sectionbox"><img src="images/purplehat.jpeg" class="sectionimg" style="border:black none 1px; border-radius: 5px; " /></td>
+                    <td id="sectionimg" class="sectionbox"><img src="images/sunflower.jpeg" class="sectionimg" id="tutorialsHomeImg" style="border:black none 1px;" /></td>
+                    
                 </tr>
             </table>
         </div>
-
-
-        <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
+        <div style="background-image: url('images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:20px 20px;">
+            <div>
+                <table class= "signup" style="padding-top: 12px; padding-bottom: 12px;">
+                    <form>
+                    <tr> <th style="margin-top: 12px; font-size: 32px;">Become a Member for Weekly Deals!</th></tr>
+                    <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                    <tr><td class="formitem"><input  type="text" id="name" name="name" placeholder="Name"/></td></tr>
+                    <tr><td class="formitem"><input  type="text" id="email" name="email" placeholder="Email"/></td></tr>
+                    <tr ><td><input style=""id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td></tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+        <div class="form" style=" display: inline-block; width:100%; margin-top: 0px;">
             <div class ="footer" style="text-align:left; float:left; width: 50%;">
                 <table class="quicklinks" align="center">
                     <tr>
@@ -180,31 +200,13 @@ fbirthyearFlastname-->
                 </table>
                 
             </div>
-            <div class="emailform" style="text-align:right; width:50%; float: right;">
-                <table class="contacttable" align="center">
-                    <tr>
-                        <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">Sign up below!</td>
-                    </tr>
-                    <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
-                        <tr colspan="2"class="labelitem">
-                            <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
-                        </tr>
-                        <tr>
-                            <td class="formitem" colspan="2">
-                                <input type="text" id="email" name="email" placeholder="Email"/>
-                            </td>
-                        </tr>
-                
-                        <tr>
-                            <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
-                        </tr>
-                    </form>
-                </table>
+           <div class="footerabout">
+                <p>We are a small knitting and crocheting business. We want to </p>
             </div>
-
+            <div class="footercontact">
+                <p>Email: croshaynaofficial@gmail.com</p>
+                
+                </div>
         </div>
         
         

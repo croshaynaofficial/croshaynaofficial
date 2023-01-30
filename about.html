@@ -31,6 +31,17 @@
         nameInput.value = "";
         emailInput.value = "";
     }
+
+   /*window.addEventListener(“load”, function(){
+    setTimeout(
+        function open(event){
+            document.getElementsByClassName('popup').style.display = "block";
+        },1000)
+})*/
+    function closePopUp() {
+        document.getElementById('popup').style.display = "none";
+    }
+
 </script>
 </head>
 <style>
@@ -66,6 +77,10 @@
 </style>
 <body>  
 
+
+
+
+
     <header>
         <div class="navbar">
             <ul>
@@ -96,8 +111,21 @@
         </div>
     </header>
 
-    <div class = "content" style="margin: 0 1% 0 1%">
+
+
+
+
+    <div class = "content" >
+
         <div class="contactinfo">
+
+            <div id="popup">
+                <button id=”close” onclick="closePopUp()">&times;</button>
+                <h2>Automatic Pop-Up</h2>
+            <p>Lorem, ipsum … dignissimos?</p>
+            <a href="products.html">Let’s Go</a>
+            </div>
+
             <h1>Company Policies</h1>
             <p>
                 If your product does not reach you then please inform us by reaching out to us using one of our many methods of contact and we will do our best to assist you in making sure the requested product reaches you in a timely manner.
@@ -130,6 +158,20 @@
 
             </p>
             
+        </div>
+    </div>
+    <div style="background-image: url('images/yarnbackground.jpg'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
+        <div>
+            <table class= "signup" style="">
+                <form>
+                <tr> <th><h1>Become a Member for Weekly Deals</h1></th></tr>
+                <tr><td><p>test test test test</p></td></tr>
+                <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="name" name="name" placeholder="Name"/></p></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="email" name="email" placeholder="Email"/></p></td></tr>
+                <tr style="padding-bottom: 100px;"><td><p><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></p></td></tr>
+                </form>
+            </table>
         </div>
     </div>
     <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
@@ -179,6 +221,12 @@
             </table>
         </div>
 
+        <a href="https://instagram.com/croshaynaofficial/" target="_blank">
+            <img loading="lazy" src="https://assets1.hobbii.com/6069599c0473b97345836752d322b8fdfdee58b3/catalog/view/theme/hobbii/image/footer-instagram.png">
+        </a>
+        <a href="https://www.youtube.com@croshaynaofficial" target="_blank">
+            <img loading="lazy" src="https://assets1.hobbii.com/6069599c0473b97345836752d322b8fdfdee58b3/catalog/view/theme/hobbii/image/footer-youtube.png">
+        </a>
     </div>
 
     </div>
