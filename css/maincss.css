@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Noto Sans', sans-serif;
     border: gray none 4px;
-    border-radius: 5px;
-    
+    margin: 0;
 }
 
+
+header {
+    z-index: 10000;
+    position: sticky;
+    padding: 0;
+    top: 0px;
+    width: 100%;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-    border-radius: 5px;
-
+    background-color:#f3f3f3;
+    
 }
   
 li {
@@ -26,17 +40,17 @@ li {
 
 }
   
-li #navbutton {
+#navbutton {
     display: block;
     color: #666;
     text-align: center;
     padding: 28px 28px;
     text-decoration: none;
     border: 1px hidden red;
-    border-radius: 5px;
+    border-radius: 2px;
     
 }
-li #navlogo {
+#navlogo {
     margin-top: 5px;
     display: block;
     color: #666;
@@ -44,7 +58,10 @@ li #navlogo {
     text-decoration: none;
     
 }
-  
+ul.scrolled {
+    background-color: black;
+    transition: 0.5s;
+}
 li a:hover:not(.active) {
     background-color: #ddd;
     transition: background-color 0.5s;
@@ -57,7 +74,7 @@ li a.active {
     background-color: #214341;
 }
 li a.active:hover{
-    background-color: #6e8573;
+    background-color: #1F9B92;
     transition: background-color 0.5s;
 }
 li a.navbutton {
@@ -72,25 +89,22 @@ li a.navbutton {
     font-size: 15px;
     text-align: center;
     border: 1px solid #e7e7e7;
-    border-radius:5px;
-    position:relative;
+    z-index: 10000;
+    position: sticky;
+    top: 0px;
+    width: 100%;
 }
 .mobilenav #myLinks {
     display: none;
     visibility: hidden;
     opacity: 0;
-    background-color: #f3f3f3;
+    background-color: #fcfcfc;
     
 }
 #navbar {
     overflow: hidden;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
 
 .mobilenav a {
     padding: 14px 16px;
@@ -107,6 +121,9 @@ li a.navbutton {
     text-transform: capitalize;
     transition: background-color 0.5s;
 
+}
+.indextable {
+    margin-top: 45px;
 }
 .mobilenav a.icon {
     display: block;
@@ -133,40 +150,39 @@ li a.navbutton {
     position: relative;
     text-align: center;
     color: white;
-    margin-top:15px ;
-    margin-bottom: 15px;
+    margin-top:0px;
+    margin-bottom: 0px;
     border: gray none 4px;
-    -moz-border-radius: 5px;
     border: none;
 }
+.section1img{
+    width:100%;
+}
+.section2{
+    margin: 0;
+}
 .textcentered {
-    -moz-border-radius: 5px;
     border: none;
     position: absolute;
     top: 50%;
     left: 50%;
+    width:100%;
     font-size: 50px;
     transform: translate(-50%, -50%);
     border: gray none 4px;
-    border-radius: 5px;
 }
 .section1text {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
     border: none;
     background: url('images/wideshirtscropped.jpg');
 }
 
 .section2 {
-    margin-top:15px;
-    margin-bottom:15px;
     padding: 10px 0px 10px 0px;
     width: 100%;
     
-    text-align:center;
+    text-align:left;
     align-items: center;
     border: gray none 4px;
-    border-radius: 5px;
 }
 .section2text{
     font-size:32px;
@@ -180,7 +196,14 @@ li a.navbutton {
     width: 40%;
     margin-right:6.67%
 }
-
+.sectionimg{
+    margin-top: 0px;
+    width:450px;
+    
+}
+.sticky + .content {
+    padding-top: 60px;
+  }
 
 .asideProducts{
     width: 33%;
@@ -190,17 +213,17 @@ li a.navbutton {
 .form{
     background-color:#214341;
     text-align:center;
-    margin-top:15px;
-    padding: 12px 12px 12px 12px;
+    margin-top:0px;
     border: 1px solid #e0cd69;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     border: gray none 4px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
+    
 .formitem {
     text-align: center;
-    padding: 20px 0px 0px 0px; 
+    
     margin-left:auto;
     margin-right: auto;
 }
@@ -218,21 +241,28 @@ li a.navbutton {
     height:200px;
 }
 input[type=text], select, textarea {
-    padding: 10px 10px 10px 0px;
-    box-sizing: border-box;
+    padding: 10px 10px 10px 3px;
+    
 
     width:300px;
-    border: black none 4px;
-    border-radius:5px;
+    border: black none 2px;
+    border-radius:1px;
 }
 .contactinfo {
     text-align:center;
     font-size: 24px;
 }
+
 .footer{
     margin-top: 0px;
     color:white;
     text-align: center;  
+
+}
+.signup{
+    color:white;
+    text-align: center;  
+    background-color: #214341; width: 33.33333333%;margin-left: 33.3333333%; margin-right: 33.33333%;
 
 }
 .quicklinks{
@@ -265,8 +295,12 @@ a.footerlink:visited{
     margin: 30px 0px 30px 0px; 
 }
 .footer th, td {
-    padding: 10px 30px 30px 10px;
+    padding: 10px 0px 30px 10px;
     height: 40px;
+}
+.signup th, td {
+    padding: 5px 0px 5px 0px;
+    height: 20px;
 }
 .video-container {
     position: relative;
@@ -282,30 +316,86 @@ a.footerlink:visited{
   }
 
 button.callToActionButton {
-    background-color: #214341;
+    background-color: transparent;
     display: block;
-    padding: 28px 28px;
+    padding: 20px 20px;
+    color:#214341;
     text-decoration: none;
-    border: 1px hidden red;
-    border-radius: 5px;
+    border: 2px solid #214341;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:15px;
+    margin-left: 0; margin: 25px 0 25px 0; 
+    font-weight: bold;
+
+}
+
+button.callToActionButton:hover {
+    background-color: #214341;
+    padding: 24px 24px;
     color:white;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    transition: padding 0.25s;
+    
+    cursor: pointer;
+    content: " -> "
+
+}
+#shopallbutton {
+    background-color: transparent;
+    display: block;
+    padding: 20px 20px;
+    color:gray;
+    text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
     font-size:15px;
     margin-top: 25px;
     margin-left: 100px;
     margin-right:100px; 
     font-weight: bold;
+    border: none;
+}
+
+#aboutButton {
+    background-color: transparent;
+    display: block;
+    padding: 20px 20px;
+    color:white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:15px;
+    margin-left: 0; 
+    margin: 25px 0 25px 0; 
+    font-weight: bold;
+
+}
+#shopallbutton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#aboutButton:hover{
+    background-color: white;
+    padding: 24px 24px;
+    color:#214341;
+    transition: color 0.5s;
+    transition: padding 0.25s;
+    cursor: pointer;
+    content: " -> "
 }
 .sectionbox {
     padding: 0px 150px 0px 150px;
 }
-button.callToActionButton:hover {
-    background-color:#6e8573;
-    transition: background-color 0.5s;
-    cursor: pointer;
 
+@media screen and (max-width: 1400px) {
+    .categorybuttonimg{
+        width: 120px;
+        padding: 22.5px;
+    }
+    .sectionbox {
+        padding: 0px 100px 0px 100px;
+    }
 }
-
 
 @media screen and (max-width: 1200px) {
     .categorybuttonimg{
@@ -316,10 +406,17 @@ button.callToActionButton:hover {
         padding: 0px 75px 0px 75px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .sectionbox {
+        padding: 0px 25px 0px 25px;
+    }
+    .sectiontext {
+        font-size: 15px;
+    }
 
-.sectionimg{
-    width:300px;
 }
+
+
 .categorybutton {
     background-color: #f3f3f3;
     margin: 0% 16.67% 0% 16.67%;
@@ -328,7 +425,7 @@ button.callToActionButton:hover {
     height: 125px;
     text-align:center;
     border: gray none 4px;
-    border-radius: 5px;
+    border-radius: 2px;
     
 }
 .categorybutton:hover{
@@ -337,11 +434,13 @@ button.callToActionButton:hover {
     cursor: pointer;
 }
 .footerheader{
-    font-size: 24px;
+    font-size: 32px;
 }
 .productbuttonimg{
-    width: 150px;
-    padding: 10px;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    border-radius: 3px;
 }
 .productsectionbox {
     padding: 0px 75px 0px 75px;
@@ -350,13 +449,43 @@ button.callToActionButton:hover {
 .productitem {
     background-color: #f3f3f3;
     margin: 0% 20% 0% 20%;
-    padding: 25px 25px 10px 25px;
-    width: 125px;
-    height: 125px;
+    padding: 1px 1px 0px 1px;
+    width: 175px;
+    height: 175px;
     text-align:center;
     border: gray none 4px;
-    border-radius: 5px;
+    border-radius: 3px;
     
+}
+p.productHeader {
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+}
+p.productPrice {
+    margin: 5px 0 5px 0;
+    font-size: 16px;
+}
+p.addtocart{
+    margin: 0 0 0 0;
+    
+}
+
+.addtocart {
+    border: none;
+    outline: 0;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    color: white;
+    background-color: #214341;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+.addtocart::hover {
+    background-color: #1F9B92;
 }
 
 
@@ -364,30 +493,99 @@ button.callToActionButton:hover {
     margin-top:15px;
     margin-bottom: 0px;
     padding: 16px 16px;
-    background-color: #1F9B92;
+    border: 2px solid white;
+    background-color: transparent;
     color: white;
     font-size: 14px;
-    border: 1px hidden;
-    border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
+    transition: padding 0.5s;
+    transition: background-color 0.5s;
+    transition: border 0.5s;
     
 }
 #formSubButton:hover {
     cursor: pointer;
-    background-color: #40C6C2;
+    border: 2px solid #214341;
+    background-color: white;
+    padding: 20px 20px;
+    color: #214341;
+    -moz-transition: padding 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: padding 0.5s;
     transition: background-color 0.5s;
+    transition: border 0.5s;
 }
 
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+#popup{
+    background-color: #214341;
+    color:white;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    position: fixed;
+
+}
+
+#popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: #1F9B92;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup h2{
+    margin-top: -20px;
+ }
+ .popup p{
+     font-size: 14px;
+     text-align: justify;
+     margin: 20px 0;
+     line-height: 25px;
+ }
+
+ .popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #15c196;
+    text-decoration: none;
+    padding: 8px 0;
+}
 
 .aboutsection {
-    background-color:#f3f3f3;
     border: black none 4px;
-    border-radius:5px;
     margin-top:50px;
     margin-bottom:50px;
+    background-color: #214341;
+    color:white;
 }
 .aboutsection .sectionimg{
     margin: 50px 0 50px 0;
@@ -396,14 +594,27 @@ button.callToActionButton:hover {
     margin: 50px 0 50px 0
 }
 .howtosection{
-    background-color:#f3f3f3;
     border: black none 4px;
-    border-radius:5px;
     margin-top:50px;
     margin-bottom:50px;
+    
 }
-
+.sectiontext {
+    max-width: 500px;
+    text-align: left;
+    
+}
+.sectionheader {
+    text-align: left;
+}
+#card {
+    border: none;
+    border-radius: 3px;
+}
 @media screen and (max-width: 800px) {
+    .sectionimg { width: 350px}
+}
+@media screen and (max-width: 700px) {
     .navbar {
         display: none;
     }
@@ -411,27 +622,45 @@ button.callToActionButton:hover {
     .header {
         display: none;
     }
-
+    .section1img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 50% 50%; 
+    }
+    #whoAreWeImg{
+        margin: 0 0 0 0;
+    
+    }
+    #tutorialsHomeImg {
+        margin: 0 0 0 0;
+    }
     .mobilenav {
         display: block;
     }
     .categorybuttonimg {
-        width: 75px;
+        width: 85px;
         padding: 15px;
     }
     .textmainheader {
-        font-size:18px;
+        font-size:24px;
     }
     .categorybutton {
         padding: 15px 15px 10px 15px;
     }
     .productitem {
-        padding: 15px 10px 10px 10px;
-        margin: 0% 16.67% 0% 16.67%;
+        width: 100px;
+    }
+    .addtocart {
+        font-size: 10px;
+    }
+    #card {
+        margin: 0px;
+        padding: 0px;
     }
     .productbuttonimg {
-        width: 75px;
-        padding: 3px;
+        width: 100%px;
+        padding: 0px;
     }
     .productTable {
         border-spacing: 2px;
@@ -440,17 +669,29 @@ button.callToActionButton:hover {
         font-size:24px
     }
     .sectionbox {
-        padding: 0px 0px 0px 0px;
+        width: auto;
+        display: inline;
+        margin: 0 0 0 0;
     }
     .sectionimg {
         width: 150px;
         display: inline-block;
+        margin-bottom: 0px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .sectionheader {
+        text-align:center;
+        font-size:24px;
     }
     .sectiontext {
-        font-size: 12px;
-        width: 75%;
-        float:center;
+        font-size: 16px;
+        text-align: center;
+        float: center;
         display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        
     }
     .aboutsection .sectionimg {
         width: 100%;
@@ -462,22 +703,44 @@ button.callToActionButton:hover {
         margin:0;
         padding:0;
     }
-    #sectionimg {
-        display:hidden;
+    .howtosection{
+        margin: 0;
     }
     .aboutsection{
         margin: 0;
     }
+    td#sectionimg.sectionbox {
+        padding: 0;
+        margin: 0;
+    }
 
-    .sectionheader{
-        font-size:16px;
+
+    .signup{
+        margin-left: 10%;
+        margin-right: 10%;
+        width:80%;  
     }
     button.callToActionButton {
         font-size:14px;
-        margin-left: 75px;
-        margin-right:75px; 
+        float: center;
         margin-bottom: 50px;
         padding: 14px 14px;
+        margin: 30px 100px 30px 100px;
+        text-align:center;  
+    }
+    
+    button#aboutButton {
+        font-size:14px;
+        float: center;
+        margin-bottom: 50px;
+        padding: 14px 14px;
+        width: 34%;
+        margin: 20px 33% 20px 33% ;
+        text-align:center;  
+    }
+    .section1 {
+        margin-top: 0;
+        margin-bottom: 0px;
     }
     .contacttable .footerheader{
         font-size: 18px;
@@ -496,17 +759,9 @@ button.callToActionButton:hover {
     }
     .footerlink {
         font-size: 16px;
-        margin: 30px 0px 30px 0px; 
+        margin: 15px 0px 15px 0px; 
     }
     #formSubButton {
-        margin-top:3px;
-        margin-bottom: 0px;
-        padding: 8px 8px;
-        background-color: #40C6C2;
-        color: white;
-        font-size: 14px;
-        border: 1px hidden;
-        border-radius: 5px;
     }
     
 }
@@ -527,10 +782,16 @@ button.callToActionButton:hover {
         padding: 10px 10px 10px 10px;
         height: 40px;
     }
+    .formitem {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        width: 100px;
+    }
     .textmainheader {
         font-size:17px;
     }
 }
+
 
 
 
