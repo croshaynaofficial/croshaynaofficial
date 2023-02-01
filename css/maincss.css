@@ -844,6 +844,7 @@ p.addtocart{
     padding-bottom: 10px;
     font-size: 72px;
     text-align:center;
+    width: 100%;
 }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
