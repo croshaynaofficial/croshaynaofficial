@@ -848,6 +848,13 @@ p.addtocart{
     color: white;
     text-decoration: italic;
 }
+.categorySelector {
+    background-color: #fffeab;
+    color:white;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
   
   /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
