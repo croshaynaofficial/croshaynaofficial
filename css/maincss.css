@@ -687,7 +687,6 @@ p.addtocart{
     .sectiontext {
         font-size: 16px;
         text-align: center;
-        float: center;
         display: inline-block;
         margin-left: 10px;
         margin-right: 10px;
@@ -760,8 +759,6 @@ p.addtocart{
     .footerlink {
         font-size: 16px;
         margin: 15px 0px 15px 0px; 
-    }
-    #formSubButton {
     }
     
 }
