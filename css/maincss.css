@@ -838,6 +838,13 @@ p.addtocart{
 #price {
     font-size: 14px;
 }
+.categoryName {
+    background-color: #214341;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 72px;
+    text-align:center;
+}
   
   /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
