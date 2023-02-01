@@ -842,9 +842,11 @@ p.addtocart{
     background-color: #214341;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 72px;
+    font-size: 48px;
     text-align:center;
     width: 100%;
+    color: white;
+    text-decoration: italic;
 }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
