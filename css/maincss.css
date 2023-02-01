@@ -857,6 +857,21 @@ p.addtocart{
     width: 100%;
     color: white;
 }
+button.CategorySelector{
+    margin-top:15px;
+    margin-bottom: 0px;
+    padding: 16px 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    transition: padding 0.5s;
+    transition: background-color 0.5s;
+    transition: border 0.5s;
+}
   
   /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
