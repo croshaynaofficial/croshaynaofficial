@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cro-Shayna</title>
+<link rel="stylesheet" href="css/maincss.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width + 100, initial-scale=1.0">
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.visibility === "visible") {
+            x.style.display = "none"
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.transition = "block 0.5s visibility 0s, opacity 1s linear"
+        } else {
+            x.style.display = "block"
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+            x.style.transition = "block 0.5s visibility 0s, opacity 0.5s linear"
+        }
+        
+    }
+    function formFunction() {
+        var input = document.getElementById("formSubButton");
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        input.value = "SUBMITTED";
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+
+</script>
+</head>
+<style>
+    @media screen and (max-width: 1200px) {
+        .navbar {
+        display: none;
+        }
+
+        .header {
+        display: none;
+        }
+
+        .mobilenav {
+        display: block;
+        }
+        .section1 .textcentered p {
+        font-size: 32px;
+        }
+        .section2text{
+        font-size: 24px;
+        }
+    }
+    li{
+        float:none;
+        background-color: white;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="float: left;background-color: #f3f3f3;"><a href="index.html" id="navlogo" ><img src="images/logo.png" style="height: 65px;" /></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="contact.html" id="navbutton"><strong>HELP</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="about.html"  id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;""><a href="tutorials.html" id="navbutton"><strong>TUTORIALS</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="products.html"  class="active" id="navbutton" ><strong>PRODUCTS</strong></a></li>
+                <li style="float: right;background-color: #f3f3f3;"><a href="index.html"  id="navbutton" ><strong>HOME</strong></a></li>
+            </ul>
+        
+        </div>
+        <div class="mobilenav">
+            <a href="index.html"><img id="mobileimage" src="images/logo.png" style="height:50px; " /></a>
+            
+                
+            <div id="myLinks">
+                <a href="index.html" style="color: black; "><strong>HOME</strong></a>
+                <a href="products.html" class="active" style="color: white;"><strong>PRODUCTS</strong></a>
+                <a href="tutorials.html" style="color: black;"><strong>TUTORIALS</strong></a>
+                <a href="about.html" style="color: black;"><strong>ABOUT</strong></a>
+                <a href="contact.html" style="color: black;"><strong>HELP</strong></a>
+            </div>
+            <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+                <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
+            </a>
+    
+        </div>
+    </header>
+        
+    <div class="content">
+        <table cellspacing="5" class="productTable"style="max-width:75%; margin-left: auto; margin-right:auto;">
+         <tr ><th colspan="3"><strong style="font-size: 40px; margin: 25px 0px 0px 0px;">PRODUCTS</strong></th></tr>
+         <tr><td colspan="3" id="toys"><h2 style="text-align: center; margin:0;">TOYS</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochetbunny.jpeg"><br><strong><p class="productHeader"><a href="oneproducttemplate.html"  >BUNNY</a></p><p class="productPrice">$20.00</p><button class="addtocart">ADD TO CART</button></strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/2octopusside.jpeg"><br><strong><p class="productHeader">OCTOPUS</p><p class="productPrice">$8.00 EACH</p><p class="addtocart">ADD TO CART</p></strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/sidebee.jpeg"><br><strong><p class="productHeader">BEE</p><p class="productPrice">$30.00</p><p class="addtocart">ADD TO CART</p></strong></td>
+         </tr>
+         <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/image3.jpeg"><br><strong>STRAWBERRY OTTER<br>$35.00</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/image4.jpeg"><br><strong>STRAWBERRY WHALE<br>$8.50</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/purpledonut.jpeg"><br><strong>DOUGHNUT PILLOW<br>$35.00</strong></td>
+        </tr>
+        <tr></tr>
+        <tr><td colspan="3" id="clothing"><h2 style="text-align: center; margin:0;">CLOTHING AND ACCESSORIES</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochethatwhite.jpeg"><br><strong>SIMPLE KNIT BEANIE<br>$30.00</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochet hat flower.jpeg"><br><strong>FLOWER BEANIE<br>$40.00</strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/crochet hat purple.jpeg"><br><strong>PURPLE BEANIE<br>$25.00</strong></td>
+         </tr>
+         <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet gloves red.jpeg"><br><strong>RED GLOVES<br>$35.00</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet gloves burgandy.jpeg"><br><strong>PINK GLOVES<br>$25.00</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/crochet shirt white.jpeg"><br><strong>WHITE CROP TOP<br>$55.00</strong></td>
+        </tr>
+        <tr>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet scrunchee black.jpeg"><br><strong>DARK GRAY SCRUCHIE<br>$6.50</strong></td>
+            <td class="productitem"><img class="productbuttonimg" src="images/crochet scrunchee white.jpeg"><br><strong>GRAY SCRUNCHIE<br>$6.50</strong></td>
+            <td class="productitem"><img class="productbuttonimg"  src="images/crochet shirt zebra.jpeg"><br><strong>ZEBRA-STRIPED KNIT VEST<br>$80.00</strong></td>
+        </tr>
+        <tr></tr>
+        <tr><td colspan="3" id="patterns"><h2 style="text-align: center;  margin:0;">FREE PATTERNS</h2></td></tr>
+         <tr>
+             <td class="productitem"><img class="productbuttonimg" src="images/crochetflowerkeychain.jpeg"><br><strong>FLOWER KEYCHAIN PATTERN</strong></td>
+             <td class="productitem"><img class="productbuttonimg" src="images/purplehat.jpeg"><br><strong>SIMPLE KNIT HAT PATTERN</strong></td>
+             <td class="productitem"><img class="productbuttonimg"  src="images/crochethackysack.jpeg"><br><strong>HACKY SACK PATTERN</strong></td>
+         </tr>
+         <tr><td colspan="3"><p style="text-align: center;font-style:italic;">MORE ITEMS COMING SOON!</p></td></tr>
+     </table>
+     <p style="text-align:center;">DM us on instagram if you would like to see different products added to our selection!</p>
+     <a href="https://instagram.com/croshaynaofficial/" target="_blank" style="text-align:center;">
+        <img loading="lazy" src="https://assets1.hobbii.com/6069599c0473b97345836752d322b8fdfdee58b3/catalog/view/theme/hobbii/image/footer-instagram.png">
+    </a>
+     </div>
+
+     <div style="background-image: url('images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
+        <div>
+            <table class= "signup" style="margin-top: 20px;margin-bottom: 20px;">
+                <form>
+                <tr> <th><h1>Become a Member for Weekly Deals!</h1></th></tr>
+                <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="name" name="name" placeholder="Name"/></p></td></tr>
+                <tr><td class="formitem"><p><input  type="text" id="email" name="email" placeholder="Email"/></p></td></tr>
+                <tr style="padding-bottom: 100px;"><td><p><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></p></td></tr>
+                </form>
+            </table>
+        </div>
+    </div>
+
+     <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
+        <div class ="footer" style="text-align:left; float:left; width: 50%;">
+            <table class="quicklinks" align="center">
+                <tr>
+                    <th colspan="2" class="footerheader" style="text-align: center;padding-top: 25px;">QUICK LINKS</th>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="index.html" style="float: center"><strong>HOME</strong></a></td>
+                    <td><a class="footerlink" href="about.html" style="float:center;"><strong>ABOUT</strong></a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="products.html" style="float: center;"><strong>PRODUCTS</strong></a></td>
+                    <td><a class="footerlink" href="contact.html" style="float: center"><strong>HELP</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a class="footerlink" href="tutorials.html" style="float: center"><strong>TUTORIALS</strong></a></td>
+                    <td><a class="footerlink" href="copyright.html" style="float: center;"><strong>COPYRIGHT</strong></a></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="emailform" style="text-align:right; width:50%; float: right;">
+            <table class="contacttable" align="center">
+                <tr>
+                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sign up below!</td>
+                </tr>
+                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
+                    <tr colspan="2"class="labelitem">
+                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="formitem" colspan="2">
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
