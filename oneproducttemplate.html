@@ -31,7 +31,10 @@
         nameInput.value = "";
         emailInput.value = "";
     }
-    
+    function expandableImageGallary(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+}
 </script>
 </head>
 <style>
@@ -54,6 +57,7 @@
         font-size: 24px;
         }
     }
+
 </style>
 <body>
 
@@ -87,8 +91,6 @@
     </header>
 
     <div class = "content">
-
-
         <div class="howtosection">
             <table cellspacing="0" style="margin-left: auto; margin-right:auto;background-image: images/yarn-ball.jpg;">
                 <tr>
@@ -97,12 +99,59 @@
 
                         <h1 style="text-align: left" class="sectionheader">Chunky Purple Beanie</h1>
                         <p style="text-align: left" class="sectiontext" > Cro-Shayna is a small fiber/crotching business. We provide many products and services, including selling of crocheted items including toys, hats, shirts, pants, keychains, and more. We also sell patterns for people to buy to create their own crocheted products. We provide FREE tutorials to allow our customers to learn the art of crocheting, through small, short videos allowing even the least tech savy users to learn how to crochet. Our costs for our items and services are reasonably priced, with most being low priced, and some, including our tutorials, being FREE! Our products are made from the heart, and we'd love for you to join the Cro-Shayna family.</p>
-                        <button id="aboutButton"style="float: left; margin-left: 0; margin: 25px 0 25px 0; " class="callToActionButton" onclick="document.location='products.html'" style="display:inline-block;">CLICK HERE TO SHOP!</button>
                         
                     </td>
                 </tr>
             </table>
         </div>
+        
+        <!-- <table class="howtosection">
+            <tr>
+            <td id="sectionimg"class="sectionbox">
+                        <table id="sectionimg" class="sectionbox">
+                            <tr colspan="3">
+            
+                                
+                                <img id="expandedImg" src = "images/crochet_hat_purple_50.jpeg" style="width:450px;" >
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imgcolumn">
+                                    <img src="images/crochet_scrunchee_white_50.jpeg" alt="white scrunchie" onclick="expandableImageGallary(this);"></div>
+                               
+                                </td>
+                                <td>
+                                    <div class="imgcolumn">
+                                    <img src="images/crochet_scrunchee_black_50.jpeg" alt="Snow" onclick="expandableImageGallary(this);">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="imgcolumn">
+                                    <img src="images/crochet_hat_purple_50.jpeg" alt="Mountains"onclick="expandableImageGallary(this);">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                                </div>
+                        </div>
+                    </td>
+                    
+                    <td class="sectionbox" id="card"style="text-align:center;">
+
+                        <h1 style="text-align: left" class="sectionheader">Chunky Purple Beanie</h1>
+                        <p style="text-align: left" class="sectiontext" > </p>
+                        <button id="aboutButton"style="float: left; margin-left: 0; margin: 25px 0 25px 0; " class="callToActionButton" onclick="document.location='products.html'" style="display:inline-block;">CLICK HERE TO SHOP!</button>
+                        
+                    </td>
+                </tr>
+                    
+            </table> -->
+        </div>
+        <div class="toprow">
+            
+ 
+            
+        </div>  
 
         <div style="background-image: url('images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
             <div>

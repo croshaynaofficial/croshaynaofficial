@@ -76,6 +76,11 @@
     }
 </style>
 <body>  
+
+
+
+
+
     <header>
         <div class="navbar">
             <ul>
@@ -105,43 +110,62 @@
     
         </div>
     </header>
-    <div id="popup">
-        <button id=”close” onclick="closePopUp()">&times;</button>
-        <h2>Automatic Pop-Up</h2>
-    <p>Lorem, ipsum … dignissimos?</p>
-    <a href="products.html">Let’s Go</a>
-    </div>
-    <div class="aboutsection" style="margin-top: 0%;">
-        <table cellspacing="0" style="margin-left: auto; margin-right:auto;">
-            <tr>
-                <td id="sectionimg"class="sectionbox" ><img class="sectionimg" id="whoAreWeImg" src="images/grams.png" style="border:black none 1px; " /></td>
-                <td class="sectionbox" id="card"style="text-align:center;">
 
-                    <h1 class="sectionheader">HISTORY OF CROSHAYNA</h1>
-                    <p class="sectiontext" >When I was 10 my grandmother, Grams, as we called her, taught me how to crochet. She was always such a nice person and always had some of greatest stories when we were crocheting together. Anytime I crochet and create my art, I think of her and how much I love her. I love sharing my craft and teaching other people how to do it. That is why we have partnered with Ashley Lillies to provide free tutorials on how to knit and crochet.</p>
-                    
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="staffinfo" style="background-color: white; border: none;">
-        <table cellspacing="5" class="productTable"style="max-width:75%; margin-left: auto; margin-right:auto;">
-            <tr ><th colspan="3"><strong style="font-size: 40px; margin: 25px 0px 0px 0px;">OUR STAFF</strong></th></tr>
-            <tr>
-                <td class="productitem"><img class="productbuttonimg" src="images/frankHeadShot.JPG"><br><strong><p class="productHeader">Frank Rosello</p><p id="price">Lead Developer</p>
-                <td class="productitem"><img class="productbuttonimg" src="images/jackHeadShot.JPG"><br><strong><p class="productHeader">Jack Everhart</p><p id="price">Creative Director</p>
-                <td class="productitem"><img class="productbuttonimg" src="images/shaynaHeadShot.JPG"><br><strong><p class="productHeader">Shayna Messler</p><p id="price">Manufacturing Manager</p>
-            </tr>
+
+
+
+
+    <div class = "content" >
+
+        <div class="contactinfo">
+
+            <div id="popup">
+                <button id=”close” onclick="closePopUp()">&times;</button>
+                <h2>Automatic Pop-Up</h2>
+            <p>Lorem, ipsum … dignissimos?</p>
+            <a href="products.html">Let’s Go</a>
+            </div>
+
+            <h1>Company Policies</h1>
+            <p>
+                If your product does not reach you then please inform us by reaching out to us using one of our many methods of contact and we will do our best to assist you in making sure the requested product reaches you in a timely manner.
+                If you receive the incorrect product reach out to us and we will provide you with a method to send back the incorrect product you received and send you the correct one in its place.
+                If the product is the correct one but does not meet the standards of what was promised, then we will provide you with a means of sending us back the incorrect one and we will send you one that does meet your standards.
+            </p>  
+            <p>
+                Orders will be shipped within 7-10 busisness days. 
+            </p>
+            <p>
+                Because all pieces are handmade, mistakes can happen. If the product is the correct one but 
+                does not meet the standards of what was promised, then we will provide you with a means of sending us back the 
+                incorrect one and we will send you one that does meet your standards. This will take some time though and no refunds will be available. 
+            </p>
             
-        </table>
+            <h3>Care for Clothing</h3>
+            <p>
+                Treat your knitted and croched clothes gently and only handwash when necessary.
+                Folding knits are recommended because hanging them will stretch them out overtime. 
+
+            </p>
+            <h3>
+                Wash Instructions
+            </h3>
+            <p>
+                <ol>
+                    <li style="float:none;text-align: left;">Soak your clothes in lukewarm water and gently wash using soap or mild detergent.</li>
+                    <li style="float:none;text-align: left;">Air dry flat on a towel.</li>
+                </ol>
+
+            </p>
+            
+        </div>
     </div>
-
-
-    <div style="background-image: url('images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
+    <div style="background-image: url('images/yarnbackground.jpg'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
         <div>
-            <table class= "signup" style="margin-top: 20px;margin-bottom: 20px;">
+            <table class= "signup" style="">
                 <form>
-                <tr> <th><h1>Become a Member for Weekly Deals!</h1></th></tr>
+                <tr> <th><h1>Become a Member for Weekly Deals</h1></th></tr>
+                <tr><td><p>test test test test</p></td></tr>
                 <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
                 <tr><td class="formitem"><p><input  type="text" id="name" name="name" placeholder="Name"/></p></td></tr>
                 <tr><td class="formitem"><p><input  type="text" id="email" name="email" placeholder="Email"/></p></td></tr>
@@ -172,7 +196,30 @@
             </table>
             
         </div>
-
+        <div class="emailform" style="text-align:right; width:50%; float: right;">
+            <table class="contacttable" align="center">
+                <tr>
+                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sign up below!</td>
+                </tr>
+                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
+                    <tr colspan="2"class="labelitem">
+                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="formitem" colspan="2">
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
 
         <a href="https://instagram.com/croshaynaofficial/" target="_blank">
             <img loading="lazy" src="https://assets1.hobbii.com/6069599c0473b97345836752d322b8fdfdee58b3/catalog/view/theme/hobbii/image/footer-instagram.png">
@@ -181,3 +228,9 @@
             <img loading="lazy" src="https://assets1.hobbii.com/6069599c0473b97345836752d322b8fdfdee58b3/catalog/view/theme/hobbii/image/footer-youtube.png">
         </a>
     </div>
+
+    </div>
+    
+
+</body>
+</html>

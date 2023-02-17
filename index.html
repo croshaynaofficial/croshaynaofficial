@@ -49,8 +49,35 @@
     }
     
 </script>
+    
+</script>
 </head>
 <style>
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 @media screen and (max-width: 1200px) {
         .navbar {
         display: none;
@@ -113,7 +140,7 @@
                 <p class="textmainheader" id="typeText"></p>
             </div>
         </div>
-
+        
         <div class = "section2">
 
                 <!--This is going to be some categories of products that will take you to a specific page with only those products-->
@@ -121,7 +148,7 @@
                    <table cellspacing="10" style="max-width:50%; margin-left: auto; margin-right:auto;">
                     <tr style = "text-align: center;" ><th colspan="3" ><strong style="font-size: 40px;">SHOP</strong></th></tr>
                     <tr>
-                        <td onclick="location.href='products.html#toys'" class="categorybutton"><img class="categorybuttonimg" src="images/teddy-bear.png"><br><strong>TOYS</strong></td>
+                        <td onclick="location.href='productstuffedanimals.html'" class="categorybutton"><img class="categorybuttonimg" src="images/teddy-bear.png"><br><strong>TOYS</strong></td>
                         <td onclick="location.href='products.html#clothing'" class="categorybutton"><img class="categorybuttonimg" src="images/fashion.png"><br><strong>CLOTHING</strong></td>
                         <td onclick="location.href='products.html#patterns'" class="categorybutton"><img class="categorybuttonimg"  src="images/crochet.png"><br><strong>PATTERNS</strong></td>
                         
@@ -134,11 +161,14 @@
                 </table>
                 </div>
         </div>
-        
+        <div class="crochetDescription">
+            <h1>WHAT IS CROCHETING?</h1>
+            <p>Crocheting an knitting, along with many other forms of art are all centered around the yarn medium. Crocheting is essentially putting loops inside of loops and building ontop of that until it becomes something beautiful. </p>
+        </div>
         <div class="aboutsection">
             <table cellspacing="0" style="margin-left: auto; margin-right:auto;">
                 <tr>
-                    <td id="sectionimg"class="sectionbox" ><img class="sectionimg" id="whoAreWeImg" src="images/whoAreWe.jpg" style="border:black none 1px; " /></td>
+                    <td id="sectionimg"class="sectionbox" ><img class="sectionimg" id="whoAreWeImg" src="images/groupshot.JPG" style="border:black none 1px; " /></td>
                     <td class="sectionbox" id="card"style="text-align:center;">
 
                         <h1 class="sectionheader">WHO ARE WE?</h1>
@@ -153,7 +183,7 @@
             <table cellspacing="" style="margin-left: auto; margin-right:auto;">
                 <tr>
                     
-                    <td class="sectionbox" id="card"style="text-align:center;">
+                    <td class="sectionbox" id="card"style="text-align:center; padding-top: 10px; padding-bottom: 10px">
                         <h1 class="sectionheader" >WE PROVIDE TUTORIALS!</h1>
                         <p  class="sectiontext" > Crochet is a growing hobby. Many people are now learning how to do it. Our business provides pdfs of patterns of how to make certain pieces. We also provide free tutorials on how to follow these patterns and how to crochet and knit for complete begineers. We also have videos provided on our YouTube page (also found on our website) to follow along with while you create your very own art out of yarn.</p>
                         <button style="float: left; "class="callToActionButton" onclick="document.location='tutorials.html'" style="display:inline-block">CLICK HERE FOR TUTORIALS!</button>
@@ -176,7 +206,7 @@
                 </table>
             </div>
         </div>
-        <div class="form" style=" display: inline-block; width:100%; margin-top: 0px;">
+        <!-- <div class="form" style=" display: inline-block; width:100%; margin-top: 0px;">
             <div class ="footer" style="text-align:left; float:left; width: 50%;">
                 <table class="quicklinks" align="center">
                     <tr>
@@ -205,7 +235,45 @@
                 <p>Email: croshaynaofficial@gmail.com</p>
                 
                 </div>
-        </div>
+        </div> -->
+
+        <!-- <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Legacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Careers</h3>
+                            <ul>
+                                <li><a href="#">Job openings</a></li>
+                                <li><a href="#">Employee success</a></li>
+                                <li><a href="#">Benefits</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">Company Name © 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> -->
         
         
     </div>
