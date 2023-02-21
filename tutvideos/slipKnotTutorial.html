@@ -1,0 +1,158 @@
+<!--google email: croshaynaofficial@gmail.com
+password: franks birthyear and then his Lastname
+fbirthyearFlastname-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cro-Shayna</title>
+<link rel="stylesheet" href="../css/maincss.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/962ad0f493.js" crossorigin="anonymous"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.visibility === "visible") {
+            x.style.display = "none"
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.transition = "block 0.5s visibility 0s, opacity 1s linear"
+        } else {
+            x.style.display = "block"
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+        }
+        
+    }
+    function hoverImage(imageID, imageLocation) {
+        document.getElementById(imageID).src = imageLocation;
+        document.getElementById(imageID).style.webkitTransition = " all .3s ease-in-out";
+        document.getElementById(imageID).style.transition = " all .3s ease-in-out";
+    }
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {navMoveWithScroll};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function navMoveWithScroll() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    function formFunction() {
+        var input = document.getElementById("formSubButton");
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        input.value = "SUBMITTED";
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+    
+</script>
+</head>
+<style>
+@media screen and (max-width: 1200px) {
+        .navbar {
+        display: none;
+        }
+
+        .header {
+        display: none;
+        }
+
+        .mobilenav {
+        display: block;
+        }
+        .section1 .textcentered p {
+        font-size: 32px;
+        }
+        .section2text{
+        font-size: 20px;
+        }
+    }
+</style>
+<body>
+
+    <header>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li style="float: left;"><a href="../index.html" id="navlogo" ><img src="../images/logo.png" style="height: 65px;" /></a></li>
+                <li style="float: right;"><a href="../contact.html" id="navbutton"><strong>HELP</strong></a></li>
+                <li style="float: right;"><a href="../about.html" id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;"><a href="../tutorials.html" class="active" id="navbutton"><strong>TUTORIALS</strong></a></li>
+                <li style="float: right;"><a href="../products.html" id="navbutton" ><strong>PRODUCTS</strong></a></li>
+                <li style="float: right;"><a href="../index.html" id="navbutton" ><strong>HOME</strong></a></li>
+                
+            </ul>
+        
+        </div>
+        <div class="mobilenav">
+            <a href="../index.html"><img id="mobileimage" src="../images/logo.png" style="height:50px; " /></a>
+            
+                
+            <div id="myLinks">
+                <a href="../index.html"  style="color: black; "><strong>HOME</strong></a>
+                <a href="../products.html" style="color: black;"><strong>PRODUCTS</strong></a>
+                <a href="../tutorials.html" class="active"style="color: white;"><strong>TUTORIALS</strong></a>
+                <a href="../about.html" style="color: black;"><strong>ABOUT</strong></a>
+                <a href="../contact.html" style="color: black;"><strong>HELP</strong></a>
+            </div>
+            <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+                <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
+            </a>
+    
+        </div>
+    </header>
+
+                <div class="contactinfo" style="text-align: center;max-width: 50%; margin-left: 25%; margin-right: 25%;">      
+                    <h1 class="tutHeader">TUTORIAL 1: SLIP KNOT</h1>
+                    <div class="video-container">
+                        <iframe width=700" height="400" src="https://www.youtube.com/embed/BNb9RUkdNMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4>This is our basic tutorial on how to make a slipknot. This is a crocheting fundamental needed to learn more advanced crocheting techniques.</h4>           
+                    
+                </div>
+
+        
+        
+        
+                <div style="background-image: url('../images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:20px 20px;">
+                    <div>
+                        <table class= "signup" style="padding-top: 12px; padding-bottom: 12px;">
+                            <form>
+                            <tr> <th style="margin-top: 12px; font-size: 32px;">Become a Member for Weekly Deals!</th></tr>
+                            <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                            <tr><td class="formitem"><input  type="text" id="name" name="name" placeholder="Name"/></td></tr>
+                            <tr><td class="formitem"><input  type="text" id="email" name="email" placeholder="Email"/></td></tr>
+                            <tr ><td><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td></tr>
+                            </form>
+                        </table>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footerrow">
+                        <h3>CONNECT WITH US</h3>
+                    </div>
+                    <div class="footerrow">
+                        <ul class="social-links">
+                            <li><a href="https://www.instagram.com/croshaynaofficial/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@croshaynaofficial/videos"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="mailto:croshaynaofficial@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footerrow">
+                        <p>
+                            &copy;Copyright Cro-Shayna Official. All rights reserved.
+                        </p>
+                    </div>
+                </footer>
+        
+        
+
+
+
+</body>
+</html>
