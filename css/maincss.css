@@ -1247,3 +1247,25 @@ h4#tutSection {
         margin-right: 10px;
 }
 }
+a#backButton {
+  background-color: white;
+  color: gray;
+  border: none;
+  text-decoration: underline;
+  
+}
+a#backButton:visited {
+  background-color: white;
+  color: gray;
+  border: none;
+  text-decoration: underline;
+  
+}
+
+a#backButton:hover {
+  background-color: white;
+  color: gray;
+  border: none;
+  text-decoration: underline;
+  
+}
