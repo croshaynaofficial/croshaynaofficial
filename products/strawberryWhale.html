@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cro-Shayna</title>
+<link rel="stylesheet" href="../css/maincss.css">
+<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/962ad0f493.js" crossorigin="anonymous"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.visibility === "visible") {
+            x.style.display = "none"
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+            x.style.transition = "block 0.5s visibility 0s, opacity 1s linear"
+        } else {
+            x.style.display = "block"
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+            x.style.transition = "block 0.5s visibility 0s, opacity 0.5s linear"
+        }
+        
+    }
+    function formFunction() {
+        var input = document.getElementById("formSubButton");
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        input.value = "SUBMITTED";
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+    function expandableImageGallary(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+}
+</script>
+</head>
+<style>
+    @media screen and (max-width: 1200px) {
+        .navbar {
+        display: none;
+        }
+
+        .header {
+        display: none;
+        }
+
+        .mobilenav {
+        display: block;
+        }
+        .section1 .textcentered p {
+        font-size: 32px;
+        }
+        .section2{
+        font-size: 24px;
+        }
+    }
+
+</style>
+<body>
+
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="float: left;"><a href="../index.html" id="navlogo" ><img src="../images/logo.png" style="height: 65px;" /></a></li>
+                <li style="float: right;"><a href="../contact.html" id="navbutton"><strong>HELP</strong></a></li>
+                <li style="float: right;"><a href="../about.html" id="navbutton" ><strong>ABOUT</strong></a></li>
+                <li style="float: right;"><a href="../tutorials.html" id="navbutton"><strong>TUTORIALS</strong></a></li>
+                <li style="float: right;"><a href="../products.html"  id="navbutton" ><strong>PRODUCTS</strong></a></li>
+                <li style="float: right;"><a href="../index.html"  id="navbutton" ><strong>HOME</strong></a></li>
+            </ul>
+        </div>
+        <div class="mobilenav">
+            <a href="../index.html"><img id="mobileimage" src="../images/logo.png" style="height:50px; " /></a>
+            
+                
+            <div id="myLinks">
+                <a href="../index.html"  style="color: black; "><strong>HOME</strong></a>
+                <a href="../products.html" style="color: black;"><strong>PRODUCTS</strong></a>
+                <a href="../tutorials.html" style="color: black;"><strong>TUTORIALS</strong></a>
+                <a href="../about.html" style="color: black;"><strong>ABOUT</strong></a>
+                <a href="../contact.html" class="active" style="color: white;"><strong>HELP</strong></a>
+            </div>
+            <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+                <i class="fa fa-bars" style="width:50px; height: 37px;margin-top: 35%"></i>
+            </a>
+    
+        </div>
+    </header>
+
+    <div class = "content">
+        <div class="howtosection">
+            <table cellspacing="0" style="margin-left: auto; margin-right:auto; ">
+                <tr>
+                    <td id="sectionimg"class="sectionbox" ><img class="sectionimg" src="../images/image4.jpeg" style="border:black none 1px; " /></td>
+                    <td class="sectionbox" id="card"style="text-align:center;">
+
+                        <h1 style="text-align: left" class="sectionheader">Strawberry Whale</h1>
+                        <h3 style="text-align: left">Price: 9.99 + tax</h3>
+                        <p style="text-align: left" class="sectiontext">This is our strawberry whale! It is fairly small and is the perfect gift for family or friends on a budget!</p>
+
+                        <div id="buyButton">
+                            <div id='product-component-1677034096507'></div>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+      
+        </div>
+
+        <div style="background-image: url('../images/yarnBackground.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover; padding:10px 10px 10px 10px;">
+            <div>
+                <table class= "signup" style="margin-top: 20px;margin-bottom: 20px;">
+                    <form>
+                    <tr> <th><h1>Become a Member for Weekly Deals!</h1></th></tr>
+                    <tr><td><form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" ></td></tr>
+                    <tr><td class="formitem"><p><input  type="text" id="name" name="name" placeholder="Name"/></p></td></tr>
+                    <tr><td class="formitem"><p><input  type="text" id="email" name="email" placeholder="Email"/></p></td></tr>
+                    <tr style="padding-bottom: 100px;"><td><p><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></p></td></tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+        <footer>
+          <div class="footerrow">
+              <h3>CONNECT WITH US</h3>
+          </div>
+          <div class="footerrow">
+              <ul class="social-links">
+                  <li><a href="https://www.instagram.com/croshaynaofficial/"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/@croshaynaofficial/videos"><i class="fa-brands fa-youtube"></i></a></li>
+                  <li><a href="mailto:croshaynaofficial@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+              </ul>
+          </div>
+          <div class="footerrow">
+              <p>
+                <a id="copyrightLink"href="../copyright.html">&copy;Copyright Cro-Shayna Official. All rights reserved.</a>
+              </p>
+          </div>
+      </footer>
+      <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'croshayna.myshopify.com',
+              storefrontAccessToken: '9ce36dccc5d6b3298a9959aca11f804a',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('product', {
+                id: '8121058328863',
+                node: document.getElementById('product-component-1677034096507'),
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px"
+                },
+                "text-align": "left"
+              },
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px",
+                "padding-left": "44px",
+                "padding-right": "44px"
+              }
+            },
+            "contents": {
+              "img": false,
+              "button": false,
+              "buttonWithQuantity": true,
+              "title": false,
+              "price": false
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "button": false,
+              "buttonWithQuantity": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px",
+                "padding-left": "44px",
+                "padding-right": "44px"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ],
+            "text": {
+              "button": "Add to cart"
+            }
+          },
+          "option": {},
+          "cart": {
+            "styles": {
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px"
+              }
+            },
+            "text": {
+              "total": "Subtotal",
+              "button": "Checkout"
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                "background-color": "#214341",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                }
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          }
+        },
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
+</body>
+</html>
