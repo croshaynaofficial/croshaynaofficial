@@ -758,7 +758,7 @@ p.addtocart{
         padding: 0px;
     }
     .productbuttonimg {
-        width: 100%px;
+        width: 100%;
         padding: 0px;
     }
     .productTable {
@@ -832,8 +832,8 @@ p.addtocart{
         float: center;
         margin-bottom: 50px;
         padding: 14px 14px;
-        width: 34%;
-        margin: 20px 33% 20px 33% ;
+        width: 50%;
+        margin: 20px 25% 20px 25% ;
         text-align:center;  
     }
     .section1 {
@@ -973,6 +973,12 @@ p.addtocart{
     transition: padding 0.5s;
     transition: background-color 0.5s;
     transition: border 0.5s;
+}
+#catButton:hover {
+    background-color: white;
+    color: #356b67;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 #catHead {
     margin-top: 10px;
@@ -1204,4 +1210,38 @@ footer h3{
 .social-links li a:active, .social-links li a:hover {
     background-color: #356b67;
     border-radius: 50%;
+}
+#copyrightLink {
+    color:white;
+    text-decoration: underline;
+}
+#copyrightLink:visited {
+    color:white;
+    text-decoration: underline;
+}
+#copyrightLink:hover {
+    color:white;
+    text-decoration: underline;
+}
+.contactinfo#tutSection {
+    text-align: center;
+    max-width: 50%; 
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h4#tutSection {
+    margin-top: 15px;
+}
+@media screen and (max-width: 800px) {
+    .categoryName{
+        font-size: 32px;
+    }
+    .contactinfo#tutSection {
+        text-align: center;
+        max-width: 100%; 
+        margin-left: 10px; 
+        margin-right: 10px;
+}
 }
