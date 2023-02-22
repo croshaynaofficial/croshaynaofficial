@@ -1037,6 +1037,7 @@ p.addtocart{
     }
     #catButton{
         font-size: 13px;
+        cursor:pointer;
     }
     #catHead {
         
