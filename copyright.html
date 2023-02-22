@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/962ad0f493.js" crossorigin="anonymous"></script>   
 <script>
     function myFunction() {
         var x = document.getElementById("myLinks");
@@ -103,13 +104,18 @@
         </div>
     </header>
 
-    <div class="contactinfo" style="margin-top: 75px; margin-bottom: 75px;">
-        <h1>COPYRIGHT</h1>
-        <p>
+    <div class="contactinfo"    >
+        <div class="categoryName">
+            <p>COPYRIGHT</p>
+        </div>
+        <p style="margin-top: 15px; margin-bottom: 15px;">
             Yarn in logo/fav and category button icons all used from flaticon.com <br>
-            Font used is from fonts.google.com <br>
-            Logo created using Figma, logo created by group <br>
-            Main photo in section 1 ("Crochet, you say?" section) taken from pix
+            Footer icons used from fontawesome.com <br>
+            Main website font and font used in logo is from fonts.google.com<br>
+            Logo created in Figma using yarn icon from flaticon.com      <br>
+            Main photo in section 1 ("Crochet, you say?" section) taken from pixabay.com<br>
+            Staff photos taken by photographer Morgan Phillips <br>
+            All other photos on site taken and created by our team!<br>
         </p>
     </div>
 
@@ -127,54 +133,23 @@
         </div>
     </div>
 
-    <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
-        <div class ="footer" style="text-align:left; float:left; width: 50%;">
-            <table class="quicklinks" align="center">
-                <tr>
-                    <th colspan="2" class="footerheader" style="text-align: center;padding-top: 25px;">QUICK LINKS</th>
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="index.html" style="float: center"><strong>HOME</strong></a></td>
-                    <td><a class="footerlink" href="about.html" style="float:center;"><strong>ABOUT</strong></a></td>
-                    
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="products.html" style="float: center;"><strong>PRODUCTS</strong></a></td>
-                    <td><a class="footerlink" href="contact.html" style="float: center"><strong>HELP</strong></a></td>
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="tutorials.html" style="float: center"><strong>TUTORIALS</strong></a></td>
-                    <td><a class="footerlink" href="copyright.html" style="float: center;"><strong>COPYRIGHT</strong></a></td>
-                </tr>
-            </table>
-            
+    <footer>
+        <div class="footerrow">
+            <h3>CONNECT WITH US</h3>
         </div>
-        <div class="emailform" style="text-align:right; width:50%; float: right;">
-            <table class="contacttable" align="center">
-                <tr>
-                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">Sign up below!</td>
-                </tr>
-                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
-                    <tr colspan="2"class="labelitem">
-                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
-                    </tr>
-                    <tr>
-                        <td class="formitem" colspan="2">
-                            <input type="text" id="email" name="email" placeholder="Email"/>
-                        </td>
-                    </tr>
-            
-                    <tr>
-                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
-                    </tr>
-                </form>
-            </table>
+        <div class="footerrow">
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/croshaynaofficial/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@croshaynaofficial/videos"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="mailto:croshaynaofficial@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
         </div>
-
-    </div>
+        <div class="footerrow">
+            <p>
+              <a id="copyrightLink"href="copyright.html">&copy;Copyright Cro-Shayna Official. All rights reserved.</a>
+            </p>
+        </div>
+    </footer>
     
     
 </div>

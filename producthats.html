@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/962ad0f493.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width + 100, initial-scale=1.0">
 <script>
     function myFunction() {
@@ -55,10 +56,6 @@
         font-size: 24px;
         }
     }
-    li{
-        float:none;
-        background-color: white;
-    }
 </style>
 <body>
     <header>
@@ -91,102 +88,87 @@
         </div>
     </header>
     <div class="categoryName">
-        <p>ALL PRODUCTS</p>
+        <p>CLOTHING</p>
     </div>
     <div class="categorySelector">
-        <button id="catButton" onclick="document.location='producthats.html'">HATS AND ACCESSORIES</button>
-        <button id="catButton" onclick="document.location='productstuffedanimals.html'">STUFFED ANIMALS</button>
-        <button id="catButton">FREE PATTERNS</button>
-        <button id="catButton" onclick="document.location='products.html'">SHOP ALL</button>
+        <div class="buttonsSec">
+            <p id="catHead">SORT</p>
+            <button id="catButton" onclick="document.location='producthats.html'">CLOTHES</button>
+            <button id="catButton" onclick="document.location='productstuffedanimals.html'">PLUSHES</button>
+            <button id="catButton" onclick="document.location='productpatterns.html'">PATTERNS</button>
+            <button id="catButton" onclick="document.location='products.html'">ALL</button>
+        </div>
     </div>
     <div class="products">
         <div class="row">
             <div class="column">
-                 <div class="productCard">
-                    <div>
-                        <img src="images/crochet hat purple.jpeg">
+                <a id="productLink" href="products/simpleBeanie.html">
+                    <div class="productCard" >
+                        <div>
+                            <img src="images/crochet hat purple.jpeg">
+                        </div>
+                        <div class="productText">
+                            <p><strong>SIMPLE BEANIE</strong></p>
+                            <p id="price">$14.99</p>
+                            <p><span id="productStars">☆☆☆☆</span>☆</p>
+                        </div>
                     </div>
-                    <div class="productText">
-                        <p><strong> <a href="oneproducttemplate.html">BUNNY</a></strong></p>
-                        <p id="price">$19.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-                
-                <div class="productCard">
-                    <div>
-                        <img src="images/crochet_hat_purple_50.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong>OCTOPUS</strong></p>
-                        <p id="price" >$7.99 each</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div>
-                        <img src="images/crochethatwhite_50.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong>SMALL BEE</strong></p>
-                        <p id="price">$12.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
+                </a>
+                <a id="productLink" href="products/flowerHat.html">
                 <div class="productCard">
                     <div>
                         <img src="images/crochet hat flower.jpeg">
                     </div>
                     <div class="productText">
-                        <p><strong>STRAWBERRY WHALE</strong></p>
-                        <p id="price">$9.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div>
-                        <img src="images/crochet gloves burgandy.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong>STRAWBERRY WHALE</strong></p>
-                        <p id="price">$9.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div>
-                        <img src="images/crochet gloves burgandy.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong>STRAWBERRY WHALE</strong></p>
-                        <p id="price">$9.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="productCard" >
-                    <div>
-                        <img src="images/crochethatwhite_50.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong></strong>SIMPLE BEANIE</strong></p>
+                        <p><strong>FLOWER HAT</strong></p>
                         <p id="price">$14.99</p>
                         <p><span id="productStars">☆☆☆☆</span>☆</p>
                     </div>
                 </div>
+                </a>
+            </div>
+            <div class="column">
+              <a id="productLink" href="products/premiumBeanie.html">
+                <div class="productCard">
+                    <div>
+                        <img src="images/crochethatwhite.jpeg">
+                    </div>
+                    <div class="productText">
+                        <p><strong>PREMIUM BEANIE</strong></p>
+                        <p id="price">$19.99</p>
+                        <p><span id="productStars">☆☆☆☆</span>☆</p>
+                    </div>
+                </div>
+                </a>
+                <a id="productLink" href="products/cropTop.html">
+                <div class="productCard">
+                    <div>
+                        <img src="images/crochet shirt white.jpeg">
+                    </div>
+                    <div class="productText">
+                        <p><strong>CROP TOP</strong></p>
+                        <p id="price">$24.99</p>
+                        <p><span id="productStars">☆☆☆☆</span>☆</p>
+                    </div>
+                </div>
+                </a>
+                
+
+            </div>
+            <div class="column">
+              <a id="productLink" href="products/premiumGloves.html">
                 <div class="productCard">
                     <div>
                         <img src="images/crochet gloves red.jpeg">
                     </div>
                     <div class="productText">
                         <p><strong>PREMIUM GLOVES</strong></p>
-                        <p id="price">$9.99</p>
+                        <p id="price">$12.99</p>
                         <p><span id="productStars">☆☆☆☆</span>☆</p>
                     </div>
                 </div>
+              </a>
+              <a id="productLink" href="products/simpleGloves.html">
                 <div class="productCard">
                     <div>
                         <img src="images/crochet gloves burgandy.jpeg">
@@ -197,40 +179,38 @@
                         <p><span id="productStars">☆☆☆☆</span>☆</p>
                     </div>
                 </div>
+              </a>
+                
             </div>
             <div class="column">
+              <a id="productLink" href="products/knitVest.html">
                 <div class="productCard">
                     <div>
                         <img src="images/crochet shirt zebra.jpeg">
                     </div>
                     <div class="productText">
                         <p><strong>KNIT VEST</strong></p>
-                        <p id="price">$9.99</p>
+                        <p id="price">$24.99</p>
                         <p><span id="productStars">☆☆☆☆</span>☆</p>
                     </div>
                 </div>
+              </a>
+              <a id="productLink" href="products/scrunchie.html">
                 <div class="productCard">
                     <div>
                         <img src="images/crochet scrunchee black.jpeg">
                     </div>
                     <div class="productText">
                         <p><strong>SCRUNCHIE</strong></p>
-                        <p id="price">$9.99</p>
+                        <p id="price">$4.99</p>
                         <p><span id="productStars">☆☆☆☆</span>☆</p>
                     </div>
                 </div>
-                <div class="productCard">
-                    <div>
-                        <img src="images/crochet scrunchee black.jpeg">
-                    </div>
-                    <div class="productText">
-                        <p><strong>SCRUNCHIE</strong></p>
-                        <p id="price">$9.99</p>
-                        <p><span id="productStars">☆☆☆☆</span>☆</p>
-                    </div>
-                </div>
+                </a>
+
             </div>
         </div>
+    </div>
     </div>
         
 
@@ -248,53 +228,190 @@
         </div>
     </div>
 
-     <div class="form" style=" display: inline-block; width:100%; margin-top: 15px;">
-        <div class ="footer" style="text-align:left; float:left; width: 50%;">
-            <table class="quicklinks" align="center">
-                <tr>
-                    <th colspan="2" class="footerheader" style="text-align: center;padding-top: 25px;">QUICK LINKS</th>
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="index.html" style="float: center"><strong>HOME</strong></a></td>
-                    <td><a class="footerlink" href="about.html" style="float:center;"><strong>ABOUT</strong></a></td>
-                    
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="products.html" style="float: center;"><strong>PRODUCTS</strong></a></td>
-                    <td><a class="footerlink" href="contact.html" style="float: center"><strong>HELP</strong></a></td>
-                </tr>
-                <tr>
-                    <td><a class="footerlink" href="tutorials.html" style="float: center"><strong>TUTORIALS</strong></a></td>
-                    <td><a class="footerlink" href="copyright.html" style="float: center;"><strong>COPYRIGHT</strong></a></td>
-                </tr>
-            </table>
-            
-        </div>
-        <div class="emailform" style="text-align:right; width:50%; float: right;">
-            <table class="contacttable" align="center">
-                <tr>
-                    <th class="footerheader" style="text-align: center;padding-top: 25px;">BECOME A MEMBER FOR WEEKLY DEALS!</th>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">Sign up below!</td>
-                </tr>
-                <form id="announcementForm" class="contactform" onsubmit="formFunction()" method="post" >
-                    <tr colspan="2"class="labelitem">
-                        <td class="formitem"><input type="text" id="name" name="name" placeholder="Name"/></td>
-                    </tr>
-                    <tr>
-                        <td class="formitem" colspan="2">
-                            <input type="text" id="email" name="email" placeholder="Email"/>
-                        </td>
-                    </tr>
-            
-                    <tr>
-                        <td colspan="2" style="text-align:center;"><input id="formSubButton" type="button" onclick="formFunction()" value="SUBMIT"></td>
-                    </tr>
-                </form>
-            </table>
-        </div>
-
+    <footer>
+      <div class="footerrow">
+          <h3>CONNECT WITH US</h3>
+      </div>
+      <div class="footerrow">
+          <ul class="social-links">
+              <li><a href="https://www.instagram.com/croshaynaofficial/"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/@croshaynaofficial/videos"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="mailto:croshaynaofficial@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+          </ul>
+      </div>
+      <div class="footerrow">
+          <p>
+            <a id="copyrightLink"href="copyright.html">&copy;Copyright Cro-Shayna Official. All rights reserved.</a>
+          </p>
+      </div>
+  </footer>
+        <div style="display: none;"id='product-component-1677036135244'></div>
     </div>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'croshayna.myshopify.com',
+              storefrontAccessToken: '9ce36dccc5d6b3298a9959aca11f804a',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('product', {
+                id: '8118122283295',
+                node: document.getElementById('product-component-1677036135244'),
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px"
+                },
+                "text-align": "left"
+              },
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px",
+                "padding-left": "44px",
+                "padding-right": "44px"
+              }
+            },
+            "contents": {
+              "img": false,
+              "button": false,
+              "buttonWithQuantity": true,
+              "title": false,
+              "price": false
+            },
+            "text": {
+              "button": "BUY NOW"
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "button": false,
+              "buttonWithQuantity": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px",
+                "padding-left": "44px",
+                "padding-right": "44px"
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ],
+            "text": {
+              "button": "Add to cart"
+            }
+          },
+          "option": {},
+          "cart": {
+            "styles": {
+              "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                "background-color": "#214341",
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                },
+                "border-radius": "0px"
+              }
+            },
+            "text": {
+              "total": "Subtotal",
+              "button": "Checkout"
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                "background-color": "#214341",
+                ":hover": {
+                  "background-color": "#1e3c3b"
+                },
+                ":focus": {
+                  "background-color": "#1e3c3b"
+                }
+              }
+            },
+            "googleFonts": [
+              "Open Sans"
+            ]
+          }
+        },
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
+        <div style="display: none;"id='product-component-1677036135244'></div>
 </body>
 </html>
