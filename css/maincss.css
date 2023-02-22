@@ -979,6 +979,7 @@ p.addtocart{
     color: #356b67;
     transition: background-color 0.5s;
     transition: color 0.5s;
+    cursor:pointer;
 }
 #catHead {
     margin-top: 10px;
@@ -1037,7 +1038,7 @@ p.addtocart{
     }
     #catButton{
         font-size: 13px;
-        cursor:pointer;
+        
     }
     #catHead {
         
