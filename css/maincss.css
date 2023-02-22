@@ -1267,5 +1267,6 @@ a#backButton:hover {
   color: gray;
   border: none;
   text-decoration: underline;
+  cursor: pointer;
   
 }
